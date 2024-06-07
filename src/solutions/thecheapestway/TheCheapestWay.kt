@@ -1,4 +1,4 @@
-package solutions
+package solutions.thecheapestway
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

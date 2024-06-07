@@ -1,4 +1,4 @@
-package solutions
+package solutions.printroutewithmaximumcost
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

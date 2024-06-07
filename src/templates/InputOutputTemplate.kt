@@ -14,3 +14,10 @@ fun main() {
     reader.close()
     writer.close()
 }
+
+// fun here
+
+fun BufferedWriter.println(s: String) {
+    write(s)
+    newLine()
+}

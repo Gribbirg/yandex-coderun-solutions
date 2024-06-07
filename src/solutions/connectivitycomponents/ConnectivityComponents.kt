@@ -1,4 +1,4 @@
-package solutions
+package solutions.connectivitycomponents
 
 import java.io.BufferedReader
 import java.io.BufferedWriter
@@ -17,31 +17,44 @@ fun main() {
         nodes[node2val].children.add(nodes[node1val])
     }
 
-    val res = depthFirstSearch(nodes)
-    writer.write(res.size.toString())
-    writer.newLine()
-    writer.write(res.joinToString(separator = " ") { it.`val`.toString() })
+    val res = connectivityComponents(nodes)
+    writer.println(res.size)
+    res.forEach {
+        writer.println(it.size)
+        writer.println(it.joinToString(" ") { node -> node.`val`.toString() })
+    }
 
     reader.close()
     writer.close()
 }
 
-private fun depthFirstSearch(nodes: List<TreeNode>): List<TreeNode> {
-    val visited = mutableSetOf<TreeNode>()
+private fun connectivityComponents(nodes: List<TreeNode>): List<List<TreeNode>> {
+    val notVisited = nodes.toMutableSet()
+    val components = mutableListOf<MutableList<TreeNode>>()
 
     fun dfs(node: TreeNode) {
-        visited.add(node)
+        notVisited.remove(node)
+        components.last().add(node)
         node.children.forEach {
-            if (it !in visited) {
+            if (it in notVisited) {
                 dfs(it)
             }
         }
     }
 
-    dfs(nodes[0])
-    return visited.sortedBy { it.`val` }.toList()
+    while (notVisited.isNotEmpty()) {
+        components.add(mutableListOf())
+        dfs(notVisited.first())
+    }
+
+    return components.map { it.sortedBy { node -> node.`val` } }
 }
 
 private data class TreeNode(val `val`: Int) {
     val children = mutableListOf<TreeNode>()
+}
+
+fun BufferedWriter.println(s: Any) {
+    write(s.toString())
+    newLine()
 }

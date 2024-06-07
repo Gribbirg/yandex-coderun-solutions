@@ -1,4 +1,4 @@
-package solutions
+package solutions.knightsmove
 
 import java.io.BufferedReader
 import java.io.BufferedWriter
