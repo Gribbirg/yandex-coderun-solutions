@@ -1,3 +1,5 @@
+package solutions
+
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -11,6 +13,8 @@ fun main() {
 
     println(route.sum)
     println(route.route.joinToString(" ") { it.shortName })
+
+    reader.close()
 }
 
 private fun printRoutes(inputField: Array<IntArray>): RouteData {

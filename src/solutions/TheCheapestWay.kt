@@ -1,3 +1,5 @@
+package solutions
+
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -8,6 +10,8 @@ fun main() {
     val field = Array(rowsCount) { reader.readLine().split(" ").map { it.toInt() }.toIntArray() }
 
     println(theCheapestWay(field))
+
+    reader.close()
 }
 
 private fun theCheapestWay(field: Array<IntArray>): Int {

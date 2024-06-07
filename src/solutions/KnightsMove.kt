@@ -1,3 +1,5 @@
+package solutions
+
 import java.io.BufferedReader
 import java.io.BufferedWriter
 import java.io.InputStreamReader
@@ -10,6 +12,7 @@ fun main() {
     val (rowsCount, columnCount) = reader.readLine().split(" ").map { it.toInt() }
 
     writer.write(knightsMove(rowsCount, columnCount).toString())
+
     reader.close()
     writer.close()
 }
