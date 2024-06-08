@@ -21,7 +21,7 @@ fun main() {
 fun numberDifferentNumbers(nums: IntArray): Int =
     nums.toSet().size
 
-fun BufferedWriter.println(s: Any) {
+private fun BufferedWriter.println(s: Any) {
     write(s.toString())
     newLine()
 }

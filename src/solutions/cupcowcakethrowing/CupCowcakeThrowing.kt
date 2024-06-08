@@ -30,7 +30,7 @@ private fun cupCowcakeThrowing(results: List<Int>): Int {
     return results.sortedDescending().indexOf(maxCandidate) + 1
 }
 
-fun BufferedWriter.println(s: Any) {
+private fun BufferedWriter.println(s: Any) {
     write(s.toString())
     newLine()
 }

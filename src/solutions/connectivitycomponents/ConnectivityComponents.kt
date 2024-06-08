@@ -54,7 +54,7 @@ private data class TreeNode(val `val`: Int) {
     val children = mutableListOf<TreeNode>()
 }
 
-fun BufferedWriter.println(s: Any) {
+private fun BufferedWriter.println(s: Any) {
     write(s.toString())
     newLine()
 }

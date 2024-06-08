@@ -17,7 +17,7 @@ fun main() {
 
 // fun here
 
-fun BufferedWriter.println(s: Any) {
+private fun BufferedWriter.println(s: Any) {
     write(s.toString())
     newLine()
 }
