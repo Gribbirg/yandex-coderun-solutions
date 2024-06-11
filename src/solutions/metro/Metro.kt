@@ -7,6 +7,9 @@ import java.io.OutputStreamWriter
 
 private const val ON_PLATFORM_TIME = 1
 
+/**
+ * @see <a href="https://coderun.yandex.ru/problem/metro">Problem</a>
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val writer = BufferedWriter(OutputStreamWriter(System.out))

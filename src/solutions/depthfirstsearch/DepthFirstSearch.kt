@@ -5,6 +5,9 @@ import java.io.BufferedWriter
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 
+/**
+ * @see <a href="https://coderun.yandex.ru/problem/search-in-depth">Problem</a>
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val writer = BufferedWriter(OutputStreamWriter(System.out))

@@ -3,6 +3,10 @@ package solutions.printroutewithmaximumcost
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+
+/**
+ * @see <a href="https://coderun.yandex.ru/problem/print-the-route-of-the-maximum-cost">Problem</a>
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
 

@@ -6,6 +6,10 @@ import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.math.BigInteger
 
+
+/**
+ * @see <a href="https://coderun.yandex.ru/problem/knights-move-2">Problem</a>
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val writer = BufferedWriter(OutputStreamWriter(System.out))

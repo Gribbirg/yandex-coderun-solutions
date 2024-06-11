@@ -10,7 +10,7 @@ private const val MAX_VALUE = 10000000000000000L
 
 
 /**
- * https://coderun.yandex.ru/problem/improving-academic-performance
+ * @see <a href="https://coderun.yandex.ru/problem/improving-academic-performance">Problem</a>
  */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))

@@ -3,6 +3,9 @@ package solutions.thecheapestway
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+/**
+ * @see <a href="https://coderun.yandex.ru/problem/cheapest-way">Problem</a>
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
 
