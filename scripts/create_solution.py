@@ -28,5 +28,4 @@ os.mkdir(dir_path_name)
 with open(file_dir, 'w') as output:
     output.write(text)
 
-print(WORKING_DIR)
-print(os.getcwd())
+print(f"Commit msg: {' '.join(name)}")
