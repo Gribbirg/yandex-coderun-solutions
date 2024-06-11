@@ -8,6 +8,10 @@ import java.io.OutputStreamWriter
 private const val TARGET = 4
 private const val MAX_VALUE = 10000000000000000L
 
+
+/**
+ * https://coderun.yandex.ru/problem/improving-academic-performance
+ */
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val writer = BufferedWriter(OutputStreamWriter(System.out))
