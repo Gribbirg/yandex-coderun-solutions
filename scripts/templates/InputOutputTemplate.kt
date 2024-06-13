@@ -27,7 +27,7 @@ private fun {FUN_NAME}() {
 
 
 // Template functions
-private fun BufferedWriter.println(s: Any) {
+private fun BufferedWriter.println(s: Any = "") {
     write(s.toString())
     newLine()
 }
