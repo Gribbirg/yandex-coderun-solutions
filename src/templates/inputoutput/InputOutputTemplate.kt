@@ -17,7 +17,14 @@ fun main() {
 
 // fun here
 
+
+// Template functions
 private fun BufferedWriter.println(s: Any) {
     write(s.toString())
     newLine()
+}
+
+private fun <T> List<T>.toPair(): Pair<T, T> {
+    require(size == 2) { "Incorrect size" }
+    return Pair(first(), last())
 }
