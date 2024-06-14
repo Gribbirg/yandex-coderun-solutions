@@ -12,8 +12,8 @@ fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val writer = BufferedWriter(OutputStreamWriter(System.out))
 
-    val (vertexCount, edgesCount) = reader.readLine().split(" ").map { it.toInt() }
-    val vertices = List(vertexCount) { Vertex(it) }
+    val (verticesCount, edgesCount) = reader.readLine().split(" ").map { it.toInt() }
+    val vertices = List(verticesCount) { Vertex(it) }
     repeat(edgesCount) {
         val (from, to) = reader.readLine().split(" ").map { it.toInt() - 1 }
         vertices[from].from.add(vertices[to])
