@@ -1,6 +1,6 @@
 """
 From project dir:
-python ./scripts/create_solution.py problem_name
+python ./scripts/create_solution.py problem-name
 """
 
 import os
